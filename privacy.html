@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー | すもうとり</title>
+  <style>
+    :root{
+      --bg:#0b1220; --text:#0f172a; --muted:#475569; --brand:#00838f;
+      --card:#ffffff; --radius:16px; --shadow:0 10px 30px rgba(2,6,23,.12);
+    }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family:"游明朝", system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, Helvetica, Arial;
+      line-height:1.9;
+      color:var(--text);
+      background:var(--bg);
+    }
+    .container{
+      max-width:900px;
+      margin:min(6vh, 4rem) auto;
+      padding:clamp(20px, 4vw, 40px);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    h1{
+      font-size:clamp(1.4rem, 1rem + 1.6vw, 2.0rem);
+      margin:0 0 1.5rem;
+      padding-bottom:.75rem;
+      border-bottom:3px solid var(--brand);
+      text-align:center;
+    }
+    h2{
+      font-size:clamp(1.05rem, .9rem + .5vw, 1.2rem);
+      margin:1.8rem 0 .5rem;
+      color:#1b2538;
+    }
+    h3{
+      font-size:1.0rem;
+      margin:.9rem 0 .3rem;
+      color:#324053;
+    }
+    p{ margin:.5rem 0; font-size:.97rem; }
+    ul, ol{ padding-left:1.4rem; margin:.3rem 0 .8rem; }
+    ul li, ol li{ margin:.25rem 0; }
+    .lead{ color:var(--muted); }
+    .contact{
+      margin-top:1.5rem;
+      padding:1rem 1.2rem;
+      background:#f8fafc;
+      border-left:3px solid var(--brand);
+      font-size:.95rem;
+    }
+    .contact a{ color:var(--brand); text-decoration:none; word-break:break-all; }
+    .footer{
+      margin-top:2rem;
+      padding-top:1rem;
+      border-top:1px solid #e2e8f0;
+      color:var(--muted);
+      font-size:.9rem;
+      text-align:right;
+    }
+    @media (max-width:480px){
+      .container{ margin:16px auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>プライバシーポリシー</h1>
+
+    <p class="lead">株式会社バリー（以下「当社」といいます。）は、当社が提供するスマートフォン向けゲームアプリ「すもうとり」および関連サービス（以下「本サービス」といいます。）において、ユーザーの個人情報および歩数データの重要性を認識し、その保護を徹底するため、本プライバシーポリシーを定めます。</p>
+
+    <h2>第1条（基本方針）</h2>
+    <p>当社は、個人情報の保護に関する法令および関連ガイドラインを遵守し、ユーザーの個人情報を適切に取り扱います。</p>
+    <p>また、個人情報の漏えい、滅失、毀損等を防止するため、合理的な安全対策を講じます。</p>
+
+    <h2>第2条（取得する情報）</h2>
+    <p>当社は、本サービスの提供にあたり、以下の情報を取得する場合があります。</p>
+
+    <h3>1. 健康・フィットネス情報</h3>
+    <ul>
+      <li>歩数（HealthKit）</li>
+    </ul>
+    <p>歩数は、すもうとりの育成、番付、日々のきろく等、本サービスの中核機能を提供するために利用します。</p>
+
+    <h3>2. 識別子</h3>
+    <ul>
+      <li>Firebase Auth UID</li>
+      <li>独自deviceId（Keychain）</li>
+      <li>idfv（iOS）</li>
+      <li>Android ID</li>
+    </ul>
+
+    <h3>3. 連絡先情報</h3>
+    <ul>
+      <li>電話番号（SHA-256ハッシュおよび末尾4桁のみ）</li>
+      <li>メールアドレス（アカウント登録またはお問い合わせ時）</li>
+    </ul>
+    <p>電話番号は、抽選、ギフト交換、「お得」タブの利用時に行うSMS認証および報酬の不正取得防止のみに使用します。</p>
+
+    <h3>4. 端末情報</h3>
+    <ul>
+      <li>OS</li>
+      <li>端末機種名</li>
+      <li>IPアドレス</li>
+      <li>言語設定</li>
+    </ul>
+
+    <h3>5. アプリ利用情報</h3>
+    <ul>
+      <li>アプリの利用履歴</li>
+      <li>ゲームプレイ履歴</li>
+      <li>くじポイント・金のチケット取得履歴</li>
+      <li>起動回数</li>
+      <li>金星収集マイルストーン</li>
+      <li>広告閲覧履歴</li>
+      <li>クラッシュログ</li>
+    </ul>
+
+    <h3>6. ギフト交換・お問い合わせ情報（必要な場合）</h3>
+    <ul>
+      <li>ギフト交換履歴</li>
+      <li>お問い合わせ内容</li>
+      <li>本人確認に必要な情報</li>
+    </ul>
+
+    <h2>第3条（利用目的）</h2>
+    <p>当社は取得した情報を以下の目的で利用します。</p>
+    <ol>
+      <li>本サービスの提供および運営</li>
+      <li>歩数データに基づくすもうとりの育成、番付、日々のきろく等の機能提供</li>
+      <li>Firebase Authによるアカウント管理および機種変更時のデータ引き継ぎ</li>
+      <li>くじポイント・金のチケットの管理およびギフト交換の提供</li>
+      <li>SMS認証による報酬の不正取得防止</li>
+      <li>1端末1ユーザー制限、機種変更なりすまし防止等の不正対策</li>
+      <li>ユーザーサポート対応</li>
+      <li>サービス改善および品質向上</li>
+      <li>広告配信および広告効果測定</li>
+      <li>UA計測および広告キャンペーン効果測定</li>
+    </ol>
+
+    <h2>第4条（ヘルスケアデータの取扱い）</h2>
+    <ol>
+      <li>本サービスは、HealthKitから歩数データを取得します。</li>
+      <li>歩数データの取得には、ユーザーの明示的な許可が必要です。許可は端末設定から随時変更できます。</li>
+      <li>取得した歩数データは、本サービスの育成、番付、日々のきろく等の機能に利用します。</li>
+      <li>歩数データを広告配信のために利用することはありません。</li>
+      <li>歩数データはユーザーの同意なく広告事業者へ提供しません。</li>
+    </ol>
+
+    <h2>第5条（外部サービスの利用）</h2>
+    <p>当社は、本サービスにおいて以下の外部サービスを利用する場合があります。これらのサービス提供事業者は、ユーザーの端末情報や広告識別子等を取得する場合があります。</p>
+
+    <h3>1. 認証・データ管理</h3>
+    <p>Firebase Authentication / Firestore（Google LLC）</p>
+    <p>利用目的</p>
+    <ul>
+      <li>ユーザー認証</li>
+      <li>アカウント情報、ゲーム進行、残高情報の保存</li>
+      <li>端末およびサーバでのバックアップ</li>
+      <li>メールアドレスまたは電話番号による機種変更時のデータ引き継ぎ</li>
+    </ul>
+
+    <h3>2. 広告効果測定・UA計測</h3>
+    <p>Adjust（Adjust GmbH）</p>
+    <p>利用目的</p>
+    <ul>
+      <li>広告効果測定</li>
+      <li>広告成果の分析</li>
+      <li>idfvまたはAndroid IDを用いたS2S計測</li>
+      <li>起動回数および金星収集マイルストーンの計測</li>
+    </ul>
+
+    <h3>3. 広告配信</h3>
+    <p>以下の広告配信サービスを利用する場合があります。</p>
+    <ul>
+      <li>Google Mobile Ads（Google LLC）</li>
+      <li>Unity Ads（Unity Technologies）</li>
+      <li>FIVE（LINEヤフー株式会社）</li>
+      <li>InMobi（InMobi Pte Ltd.）</li>
+    </ul>
+    <p>利用目的</p>
+    <ul>
+      <li>広告の表示</li>
+      <li>広告効果の測定</li>
+      <li>ユーザーに適した広告の配信</li>
+    </ul>
+
+    <h3>4. オファーウォール</h3>
+    <p>SkyFlag</p>
+    <p>利用目的</p>
+    <ul>
+      <li>「お得」タブにおけるオファーウォールの表示</li>
+      <li>ユーザーが選択した広告案件の成果判定</li>
+      <li>報酬付与および不正対策</li>
+    </ul>
+    <p>SkyFlagは、ユーザーが「お得」タブを選択した場合のみ表示されます。</p>
+
+    <h3>5. ギフト交換</h3>
+    <p>えらべるPay</p>
+    <p>利用目的</p>
+    <ul>
+      <li>金のチケットのギフトへの交換</li>
+      <li>交換履歴の確認</li>
+    </ul>
+    <p>各サービスのプライバシーポリシーについては、各事業者のサイトをご確認ください。</p>
+
+    <h2>第6条（第三者提供）</h2>
+    <p>当社は、以下の場合を除き、ユーザーの個人情報を第三者に提供することはありません。</p>
+    <ol>
+      <li>ユーザーの同意がある場合</li>
+      <li>法令に基づく場合</li>
+      <li>人の生命・身体・財産の保護のため必要な場合</li>
+      <li>個人を特定できない形の統計情報として提供する場合</li>
+      <li>本サービスの広告配信、UA計測、オファーウォール、ギフト交換に必要な範囲で外部サービス事業者へ提供する場合</li>
+    </ol>
+    <p>第三者共有の対象となる主な事業者は、Google Mobile Ads、Unity Ads、FIVE、InMobi、SkyFlag、Adjustです。</p>
+
+    <h2>第7条（Cookie等の利用）</h2>
+    <p>本サービスでは、利用状況の分析および広告配信のため、Cookieまたはこれに類する技術を利用する場合があります。</p>
+
+    <h2>第8条（情報の管理）</h2>
+    <p>当社は、個人情報の漏えい、滅失または毀損を防止するため、適切な安全管理措置を講じます。</p>
+    <p>本サービスのデータは端末およびFirebaseサーバに保存・バックアップされ、メールアドレスまたは電話番号による本人確認を通じて機種変更時に引き継げる場合があります。</p>
+
+    <h2>第9条（外部サイト）</h2>
+    <p>本サービスからリンクされる外部サイトにおける個人情報の取扱いについて、当社は責任を負いません。</p>
+
+    <h2>第10条（個人情報の開示・訂正等）</h2>
+    <p>ユーザーは、当社に対して以下の請求を行うことができます。</p>
+    <ul>
+      <li>個人情報の開示</li>
+      <li>訂正</li>
+      <li>削除</li>
+      <li>利用停止</li>
+    </ul>
+    <p>当社は本人確認のうえ、合理的な期間内に対応します。</p>
+
+    <h2>第11条（未成年者の利用）</h2>
+    <p>未成年者が本サービスを利用する場合は、保護者の同意を得たうえで利用するものとします。</p>
+
+    <h2>第12条（ポリシーの変更）</h2>
+    <p>当社は、法令の変更またはサービス内容の変更に応じて、本ポリシーを変更する場合があります。変更後の内容は、本サービスまたは当社ウェブサイトに掲載した時点で効力を生じます。</p>
+
+    <h2>第13条（お問い合わせ）</h2>
+    <p>本ポリシーに関するお問い合わせは以下までお願いいたします。</p>
+    <div class="contact">
+      <strong>株式会社バリー</strong><br>
+      メールアドレス: <a href="mailto:info@sir-barrie.co.jp">info@sir-barrie.co.jp</a>
+    </div>
+
+    <p class="footer">最終更新日：2026-06-02</p>
+  </main>
+</body>
+</html>

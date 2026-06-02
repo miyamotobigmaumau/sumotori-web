@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>よくある質問 | すもうとり</title>
+  <meta name="description" content="すもうとりに関するよくある質問と回答" />
+  <style>
+    :root{
+      --bg: #0b1220;
+      --text: #0f172a;
+      --muted: #475569;
+      --brand: #00838f;
+      --brand-weak: rgba(0,131,143,.1);
+      --card: #ffffff;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(2,6,23,.12);
+    }
+    *{ box-sizing: border-box; }
+    html,body{ height: 100%; }
+    body{
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+    body::before{ content: ""; position: fixed; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(11,18,32,.55), rgba(11,18,32,.55)); }
+    .container{ max-width: 900px; margin: min(10vh, 6rem) auto; padding: clamp(16px, 4vw, 32px); background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); }
+    header h1{ margin: 0 0 .25rem; font-size: clamp(1.6rem, 1.1rem + 2vw, 2.4rem); letter-spacing: .02em; }
+    header p{ color: var(--muted); margin: .25rem 0 0; }
+    .faq{ margin-top: 1.25rem; }
+    details{ background: linear-gradient(0deg, #fff, #fff) padding-box, linear-gradient(90deg, var(--brand), transparent) border-box; border: 1px solid transparent; border-radius: 12px; padding: .25rem .75rem; transition: background .2s ease, box-shadow .2s ease; }
+    details + details{ margin-top: .75rem; }
+    details[open]{ box-shadow: 0 6px 20px rgba(2,6,23,.08); background: linear-gradient(0deg, #fff, #fff) padding-box, linear-gradient(90deg, var(--brand), var(--brand)) border-box; }
+    summary{ list-style: none; cursor: pointer; padding: .85rem .25rem; outline: none; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: .75rem; font-weight: 700; color: #1b2538; }
+    summary::-webkit-details-marker{ display:none; }
+    .chev{ width: 1.25rem; height: 1.25rem; border-right: 2px solid var(--brand); border-bottom: 2px solid var(--brand); transform: rotate(-45deg); transition: transform .25s ease; }
+    details[open] .chev{ transform: rotate(45deg); }
+    .answer{ padding: 0 .25rem 1rem 0; color: #111827; }
+    .answer p{ margin: .25rem 0 0; }
+    .note{ color: var(--muted); font-size: .95rem; }
+    details:focus-within{ box-shadow: 0 0 0 3px var(--brand-weak); }
+    @media (max-width: 480px){ .container{ margin: 24px auto; } summary{ font-size: 1rem; } }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"「すもうとり」はどういうアプリですか？","acceptedAnswer":{"@type":"Answer","text":"iPhoneの歩数と連動して、卵から生まれる力士鳥を育てる育成ゲームです。歩数と連勝で番付を上げ、大関、横綱を目指します。"}},
+      {"@type":"Question","name":"歩数が反映されません。","acceptedAnswer":{"@type":"Answer","text":"iPhoneのヘルスケア連携が許可されているか確認してください。反映には時間がかかる場合があります。許可は端末の設定アプリから変更できます。"}},
+      {"@type":"Question","name":"最初の3種類のとりはどう選べばいいですか？","acceptedAnswer":{"@type":"Answer","text":"茶系、白系、黄系の3系統があります。見た目の好みで選んで問題ありません。成長した姿はすもうとりずかんで確認できます。"}},
+      {"@type":"Question","name":"星とポイントの仕組みを教えてください。","acceptedAnswer":{"@type":"Answer","text":"すもうとりが土俵に産む星をタップして回収すると、白星はくじポイント、金星は金のチケット、大金星は両方を獲得できます。黒星はペナルティです。獲得量は時期や条件により変動する場合があります。"}},
+      {"@type":"Question","name":"金のチケットの有効期限はありますか？","acceptedAnswer":{"@type":"Answer","text":"金のチケットの有効期限は最終取得から60日間です。期限を過ぎた未使用分は失効します。"}},
+      {"@type":"Question","name":"えらべるPayへの交換方法を教えてください。","acceptedAnswer":{"@type":"Answer","text":"アプリ内の交換画面から、必要な金のチケット数を確認して交換してください。交換後はえらべるPayを通じてAmazon、Apple、コンビニ等のギフトを選べます。"}},
+      {"@type":"Question","name":"SMS認証はなぜ必要ですか？","acceptedAnswer":{"@type":"Answer","text":"抽選、ギフト交換、お得タブの利用時に、不正取得防止のため電話番号によるSMS認証が必要です。電話番号はSHA-256ハッシュと末尾4桁のみ保存し、不正取得防止のみに使用します。"}},
+      {"@type":"Question","name":"お得タブとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"ユーザーが選択した場合のみ表示されるSkyFlagのオファーウォールです。おすすめアプリの利用など、条件達成により追加の報酬を獲得できる場合があります。"}},
+      {"@type":"Question","name":"広告は表示されますか？","acceptedAnswer":{"@type":"Answer","text":"本アプリは無料で利用でき、アプリ内課金はありません。広告収益により運営しており、広告はスキップ可能です。"}},
+      {"@type":"Question","name":"機種変更には対応していますか？","acceptedAnswer":{"@type":"Answer","text":"メールアドレスまたは電話番号でアカウント登録を行うことで、端末間のデータ引き継ぎが可能です。データは端末とFirebaseサーバにバックアップされます。"}},
+      {"@type":"Question","name":"退会やデータ削除はできますか？","acceptedAnswer":{"@type":"Answer","text":"アプリの削除で利用を停止できます。アカウント登録済みのデータ削除をご希望の場合は、アプリ内のお問い合わせ導線からご連絡ください。"}},
+      {"@type":"Question","name":"当選または交換した賞品はどこで確認できますか？","acceptedAnswer":{"@type":"Answer","text":"アプリメニューの設定または履歴画面から確認できます。未交換の場合は同画面から交換手続きが可能です。"}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="container" aria-labelledby="page-title">
+    <header>
+      <h1 id="page-title">よくある質問</h1>
+      <p class="note">タップして質問を開閉できます。</p>
+    </header>
+
+    <section class="faq" aria-label="FAQ リスト">
+      <details>
+        <summary><span>Q. 「すもうとり」はどういうアプリですか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. iPhoneの歩数と連動して、かわいい力士鳥「すもうとり」を育てる育成ゲームです。卵から生まれ、ヒナ、大人へと成長し、歩数や連勝を積み上げて大関、横綱を目指します。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 歩数が反映されません。</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. iPhoneのヘルスケア（HealthKit）連携が許可されているか確認してください。端末の「設定」からヘルスケアのデータアクセスを変更できます。歩数の反映には時間がかかる場合があります。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 最初の3種類のとりはどう選べばいいですか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 茶系・白系・黄系の3系統があります。見た目の好みで選んで問題ありません。育てたすもうとりは「すもうとりずかん」や過去の記録で楽しめます。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. くじポイント（P）とは？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. すもうとりが土俵に産む白星や大金星をタップで回収すると獲得できるポイントです。獲得量は時期や条件によって変動する場合があります。ためたくじポイントはアプリ内の抽選で使用できます。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 金のチケット（T）とは？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 金星や大金星を回収すると獲得できるチケットです。アプリ内の交換画面から、えらべるPayを通じてAmazon、Apple、コンビニ等のギフトに交換できます。<br><span class="note">※ 有効期限は最終取得から60日間です。期限を過ぎた未使用分は失効します。</span></p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 星の種類について教えてください。</span><i class="chev"></i></summary>
+        <div class="answer">
+          <p>A. 星には主に次の種類があります。獲得できるポイントやチケットの量は、時期や条件により変動する場合があります。</p>
+          <ul>
+            <li><strong>白星</strong>：くじポイントを獲得できます。</li>
+            <li><strong>金星</strong>：金のチケットを獲得できます。</li>
+            <li><strong>大金星</strong>：くじポイントと金のチケットの両方を獲得できます。</li>
+            <li><strong>黒星</strong>：ペナルティの星です。</li>
+          </ul>
+          <p class="note">※ 土俵をこまめにそうじして、黒星を増やさないようにしましょう。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Q. えらべるPayへの交換方法を教えてください。</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. アプリ内の「交換」画面で必要な金のチケット数を確認し、画面の案内に従って交換してください。交換後はえらべるPayのページで、Amazon、Apple、コンビニ等のギフトを選べます。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. SMS認証はなぜ必要ですか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 抽選、ギフト交換、「お得」タブの利用時に、報酬の不正取得を防ぐため電話番号によるSMS認証が必要です。電話番号はSHA-256ハッシュと末尾4桁のみ保存し、不正取得防止のみに使用します。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 「お得」タブとは何ですか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. ユーザーが選択した場合のみ表示されるSkyFlagのオファーウォールです。おすすめアプリの利用など、各案件の条件を達成すると追加の報酬を獲得できる場合があります。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 横綱になるには？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 番付は「十両 → 前頭 → 関脇 → 大関 → 横綱」と上がっていきます。歩数と連勝記録を積み上げて昇進を目指してください。横綱になった後も、維持条件を満たせない場合は陥落することがあります。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. すもうとりが引退してしまいました。</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. すもうとりは状況により引退することがあります。新しい卵を選んで再出発しましょう。これまでのすもうとりは過去の記録として残り、図鑑やコレクション要素も楽しめます。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 懸賞が当たりません。</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 懸賞は自動抽選プログラムで公平に行われています。不正は一切ありません。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 懸賞や交換の賞品はどのようなものがありますか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 賞品は時期により異なります。金のチケットはえらべるPayを通じて、Amazon、Apple、コンビニ等のギフトに交換できます。最新の内容はアプリ内でご確認ください。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 賞品は海外へ発送することは可能でしょうか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 申し訳ありませんが、海外発送は対応していません。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. サービスはどのように成り立っているのですか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 本アプリは無料で利用でき、アプリ内課金はありません。Google Mobile Ads、Unity Ads、FIVE、InMobi等の広告収益によって運営しています。広告はスキップ可能です。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 機種変更には対応していますか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. メールアドレスまたは電話番号でアカウント登録を行うことで、端末間のデータ引き継ぎが可能です。データは端末とFirebaseサーバにバックアップされます。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. アカウント登録を行うとお知らせメールなどが送られてきたりしませんか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 認証用メールや登録・引き継ぎに必要な連絡以外に、許可なくメールが送られることはありませんのでご安心ください。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 端末が故障してしまったのですが、データを復旧させることはできますか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. 事前にメールアドレスまたは電話番号でアカウント登録を行っていれば、データの復旧が可能です。急な故障に備えて登録をお願いします。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 退会・データ削除をしたいのですが。</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. アプリを削除いただければ利用を停止できます。アカウント登録済みのデータ削除をご希望の場合は、アプリ内のお問い合わせ導線からご連絡ください。</p></div>
+      </details>
+
+      <details>
+        <summary><span>Q. 当選または交換した賞品はどこで確認できますか？</span><i class="chev"></i></summary>
+        <div class="answer"><p>A. アプリメニューの「設定」または履歴画面でご確認いただけます。まだ交換がお済みでない場合、同画面から交換手続きが可能です。</p></div>
+      </details>
+    </section>
+  </main>
+</body>
+</html>
